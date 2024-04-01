@@ -1,0 +1,44 @@
+CIS 3110 Assignment 1
+Friday February 16 2024
+Gianna Casselli
+1083289
+
+
+-> Before building the program, please ensure the current directory is workdir/A1
+-> To pass arguments to the program ./A1 should be the first argument, followed by the desired files separated by spaces
+        --> As an example, to calculate the histogram of wonderland.txt, the command would be as follows:
+            './A1 wonderland.txt'
+-> The program will tell you which file is in which child process
+        --> e.g File 'wonderland.txt' is child process [PID]
+-> If a file that does not exist in the directory is passed to the program, it will display an error message and terminate that child
+        --> e.g. File Error: Could not open file for child process [PID]. Child Process will be terminated
+-> If 'SIG' is passed to the program, the signal handler will display the according message
+        --> e.g. Child [PID] terminated by signal 2: Interrupt
+-> The histogram of the file is put into file[PID].hist
+        --> e.g. For wonderland.txt, the histogram file contains the following:
+                    a 9804
+                    b 1746
+                    c 3003
+                    d 5469
+                    e 15396
+                    f 2383
+                    g 2944
+                    h 7890
+                    i 8634
+                    j 235
+                    k 1290
+                    l 5211
+                    m 2466
+                    n 8053
+                    o 9480
+                    p 1968
+                    q 220
+                    r 6612
+                    s 7269
+                    t 12204
+                    u 3979
+                    v 963
+                    w 2952
+                    x 176
+                    y 2584
+                    z 80
