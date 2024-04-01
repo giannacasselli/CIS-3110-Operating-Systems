@@ -1,0 +1,23 @@
+CIS 3110 A2
+Gianna Casselli
+1083289
+Wednesday, March 27, 2024
+
+-> Before building the program, please ensure the current directory is workdir/A2
+-> If the summary is two be written to the file 'tcassell_A2.out' please pass the argument '-l'
+    --> for example './A2 -l' to write summary to the file
+    --> or './A2' to write the summary to the screen
+-> The program will prompt you to select a menu option
+    --> 1 for new spellcheck, 2 for exit
+    --> If you are in an active spellcheck and wish to return to the main menu, enter 0
+-> Once in a new spellcheck, you will be prompted to enter the dictionary file followed by the text file, separated by the enter key
+    --> for example 'dictionary.txt' <enter> 'test.txt' <enter>
+-> The spellcheck summary will be written to file or screen upon exiting
+
+-> This program only functions with ASCII characters, i.e. if other UNICODE symbols are given, the program will not work correctly
+    --> Best example is with apostrophes: this program cannot parse properly if anything but the standard ASCII apostrophe is given
+
+-> There is one MEMORY LEAK; 200 bytes
+    --> it is from a structure pointer called FileName, as this is the only struct that is 200 bytes in size
+    --> this struct pointer has been freed, and everything initialized correctly (or so it seems)
+    --> I cannot get this leak to go away, so just be aware that it will show up
